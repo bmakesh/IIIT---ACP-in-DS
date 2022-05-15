@@ -1,0 +1,15 @@
+import numpy as np
+
+list_1 = [[7, 13, 14],[18, 10, 17],[11, 12, 19]]
+list_2 = [16, 6, 1]
+list_3 = [[5, 8, 4, 3]]
+
+list_1 = np.array(list_1)
+list_2 = np.array(list_2)
+list_3 = np.array(list_3)
+
+con = np.vstack((list_1,list_2))
+list_3 = list_3.reshape(4,1)
+final_arr = np.hstack((con,list_3))
+a = np.array(final_arr)
+print(a)
